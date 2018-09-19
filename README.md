@@ -18,7 +18,7 @@
 
 ##### about second software, `checker`:
 
-* `checker` verifies than the stack is sorted. `checker` reads the [standard input](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)), and applies instructions on the stack. If after applies the instructions the stack is sorted, well it writes "OK", else writes "KO".
+* `checker` checks that the stack is sorted. `checker` reads the instructions on [standard input](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)), and applies them to the stack. If after application of the instructions, the stack is sorted, it writes "OK", otherwise writes "KO".
 
 ## What you need for make push_swap compile ?
 
