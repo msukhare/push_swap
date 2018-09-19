@@ -4,6 +4,8 @@
 
 * push_swap is a project consisting of two software, `push_swap` and `checker`.
 
+* the goal of this project is use any sorting algorithm and adapte them to the limited instruction we can do to sort the stack.
+
 ##### about first software, `push_swap`:
 
 * `push_swap` is a software that sorts a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) in ascending order.
@@ -14,7 +16,9 @@
 
 * `push_swap` uses a modified [quick sort](), and a [selection sort]() to sort stack.
 
-##### 
+##### about second software, `checker`:
+
+* `checker` verifies than the stack is sorted. `checker` reads the [standard input](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)), and applies instructions on the stack. If after applies the instructions the stack is sorted, well it writes "OK", else writes "KO".
 
 ## What you need for make push_swap compile ?
 
