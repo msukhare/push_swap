@@ -18,9 +18,9 @@
 
 ##### about second software, `checker`:
 
-* `checker` checks that the stack is sorted. `checker` reads the instructions on [standard input](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)), and applies them to the stack. If after application of the instructions, the stack is sorted, it writes "OK", otherwise writes "KO".
+* `checker` checks that the stack is sorted. `checker` reads the instructions on [standard input](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)), and applies them to the stack. If after application of the instructions, the stack is sorted, it writes "OK", otherwise it writes "KO".
 
-## What you need for make push_swap compile ?
+## What do you need to compile push_swap ?
 
 * gcc or clang
 
@@ -30,9 +30,23 @@
 
 * ar
 
-## How make push_swap compile ?
+## How to compile push_swap ?
 
     Use `make` to compile `push_swap` and `checker`.
+    
+## How does push_swap work ?
+
+##### `push_swap`:
+
+* `./push_swap "2 1 3 6 5 8"` give you `sa pb pb pb sa pa pa pa`, all instruction are seprate by `\n`
+
+##### `checker`:
+
+* `./checker "2 1 3 6 5 8"`, will wait instructions to sort stack. If you write `sa pb pb pb sa pa pa pa` separeted by `\n`, `checker` will write "OK", because stack is sorted. If you write `sa pb` separeted by `\n`, `chekcer` will write "KO", because stack is not sorted.
+
+##### `push_swap` and `checker` together:
+
+* `./push_swap "$STACK" | ./checker "$STACK"` will give you "OK", because the stack will be sorted.
 
 ## Rules of Makefile
 
